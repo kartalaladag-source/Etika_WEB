@@ -105,19 +105,11 @@
                 <span class="font-mono text-xs uppercase tracking-[0.3em] text-champagne mb-6 gsap-reveal text-item">Kavramsal Optimizasyon Mimarisi</span>
                 <h1 class="font-sans font-bold hero-sans text-ivory gsap-reveal text-item tracking-tight">Zekayı standartlaştırın.</h1>
                 <h2 class="font-serif italic hero-serif text-champagne gsap-reveal text-item mt-[-10px] md:mt-[-20px] mb-8">Geleceği otomatize edin.</h2>
-                <div class="gsap-reveal text-item flex flex-wrap items-center gap-4">
-                    <div class="magnetic-wrap">
-                        <button class="bg-ivory text-obsidian px-8 py-4 rounded-full font-bold text-sm uppercase tracking-widest relative overflow-hidden group">
-                            <span class="relative z-10 transition-colors group-hover:text-ivory">Sistemi İncele</span>
-                            <span class="absolute inset-0 bg-champagne translate-y-full transition-transform duration-300 group-hover:translate-y-0 z-0"></span>
-                        </button>
-                    </div>
-                    <a href="https://app.storylane.io/share/szfhcrs65dqs" target="_blank" class="flex items-center gap-3 px-8 py-4 rounded-full font-bold text-sm uppercase tracking-widest border border-champagne/40 text-champagne hover:bg-champagne/10 transition-all duration-300">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/>
-                        </svg>
-                        Demo İzle
-                    </a>
+                <div class="gsap-reveal text-item magnetic-wrap">
+                    <button class="bg-ivory text-obsidian px-8 py-4 rounded-full font-bold text-sm uppercase tracking-widest relative overflow-hidden group">
+                        <span class="relative z-10 transition-colors group-hover:text-ivory">Sistemi İncele</span>
+                        <span class="absolute inset-0 bg-champagne translate-y-full transition-transform duration-300 group-hover:translate-y-0 z-0"></span>
+                    </button>
                 </div>
             </div>
             <div class="md:col-span-4 lg:col-span-3 hidden md:flex flex-col justify-end text-right font-mono text-xs text-ivory/40 uppercase tracking-widest leading-relaxed pb-4 gsap-reveal text-item">
@@ -279,7 +271,7 @@
                     <li>Cevizli Mah. Maltepe, İstanbul</li>
                     <li>Türkiye</li>
                     <li><a href="tel:+902165153199" class="hover:text-champagne transition-colors">+90 216 515 31 99</a></li>
-                    <li><a href="/cdn-cgi/l/email-protection#b2d7c6dbd9d3d3dbf2d7c6dbd9d3d3db9cd6dbd5dbc6d3de" class="hover:text-champagne transition-colors text-champagne mt-2 block"><span class="__cf_email__" data-cfemail="b6d3c2dfddd7d7dff6d3c2dfddd7d7df98d2dfd1dfc2d7da">[email&#160;protected]</span></a></li>
+                    <li><a href="mailto:etikaai@etikaai.digital" class="hover:text-champagne transition-colors text-champagne mt-2 block">etikaai@etikaai.digital</a></li>
                 </ul>
             </div>
             <div class="md:col-span-4">
@@ -298,7 +290,7 @@
     </footer>
 
     <!-- GSAP LOGIC -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script>
         document.addEventListener("DOMContentLoaded", () => {
             gsap.registerPlugin(ScrollTrigger);
 
@@ -434,4 +426,11 @@
                         .fromTo(pCards[1], { yPercent: 100, opacity: 0 }, { yPercent: 0, opacity: 1, ease: "none" }, 0)
                         .to(pCards[0], { scale: 0.9, opacity: 0.5, filter: "blur(10px)" }, 0)
                         
-                        .fromTo(pCards
+                        .fromTo(pCards[2], { yPercent: 100, opacity: 0 }, { yPercent: 0, opacity: 1, ease: "none" }, 1)
+                        .to(pCards[1], { scale: 0.9, opacity: 0.5, filter: "blur(10px)" }, 1)
+                });
+            }
+        });
+    </script>
+</body>
+</html>
